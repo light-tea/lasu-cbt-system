@@ -15,6 +15,10 @@ class StudentLoginController extends Controller
     */
     public function create()
     {
+        if (Auth::check()) {
+            return redirect('/face-verification?type=login');
+        }
+
         return view('student.login');
     }
 
@@ -27,26 +31,26 @@ class StudentLoginController extends Controller
     {
         $credentials = $request->validate([
             'matric_no' => ['required'],
-            'password' => ['required'],
+            'password'  => ['required'],
         ]);
 
-        /*
-        |--------------------------------------------------------------------------
-        | ATTEMPT LOGIN
-        |--------------------------------------------------------------------------
-        */
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt($credentials, false)) {
 
-    $request->session()->regenerate();
+            $request->session()->regenerate();
 
-    // RESET BOTH FLAGS
-    session([
-        'auth_face_verified' => false,
-        'exam_face_verified' => false
-    ]);
+            // Reset face flags
+            $request->session()->put('auth_face_verified', false);
+            $request->session()->put('exam_face_verified', false);
 
-    return redirect('/face-verification?type=login');
-}
+            // Force session write to database immediately
+            $request->session()->save();
+
+            return redirect('/face-verification?type=login');
+        }
+
+        return back()->withErrors([
+            'matric_no' => 'Invalid matric number or password.',
+        ])->withInput($request->only('matric_no'));
     }
 
     /*
@@ -59,7 +63,6 @@ class StudentLoginController extends Controller
         Auth::logout();
 
         $request->session()->invalidate();
-
         $request->session()->regenerateToken();
 
         return redirect('/student/login');
