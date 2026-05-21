@@ -177,3 +177,8 @@ Route::get('/check-auth', function() {
         'session_all' => session()->all(),
     ]);
 });
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/face-verification', [FaceVerificationController::class, 'index']);
+    Route::post('/face-verification', [FaceVerificationController::class, 'verified']);
+});

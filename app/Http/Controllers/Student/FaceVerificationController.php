@@ -39,8 +39,13 @@ class FaceVerificationController extends Controller
                    ->withErrors(['matric_no' => 'No face data found. Please register again.']);
         }
 
-        return view('face-verification', [
-            'faceDescriptor' => $user->face_descriptor
+        // return view('face-verification', [
+        //     'faceDescriptor' => $user->face_descriptor
+        // ]);
+        
+        // CORRECT
+        return view('verify-face', [
+        'faceDescriptor' => $user->face_descriptor
         ]);
     }
 
