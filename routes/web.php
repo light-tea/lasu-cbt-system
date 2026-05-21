@@ -135,3 +135,14 @@ Route::middleware(['auth'])->group(function () {
 */
 // REMOVE THIS DUPLICATE (IMPORTANT FIX)
 // Route::get('/student/exams/{attempt}/take', ...);
+
+Route::get('/debug-session', function() {
+    return response()->json([
+        'session_driver' => config('session.driver'),
+        'session_domain' => config('session.domain'),
+        'db_host'        => config('database.connections.mysql.host'),
+        'db_name'        => config('database.connections.mysql.database'),
+        'app_url'        => config('app.url'),
+        'tables'         => DB::select('SHOW TABLES'),
+    ]);
+});
