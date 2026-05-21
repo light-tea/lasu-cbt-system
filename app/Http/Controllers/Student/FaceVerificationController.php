@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Student;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class FaceVerificationController extends Controller
 {
@@ -13,12 +14,25 @@ class FaceVerificationController extends Controller
      */
     public function index(Request $request)
     {
-        if (!Auth::check()) {
+        // Check session directly instead of Auth::check()
+        $userId = $request->session()->get('login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d')
+                ?? $request->session()->get('_token');
+
+        $user = Auth::user();
+
+        // Fallback: get user from session manually
+        if (!$user) {
+            $sessionUserId = session('user_id');
+            if ($sessionUserId) {
+                $user = User::find($sessionUserId);
+                Auth::login($user);
+            }
+        }
+
+        if (!$user) {
             return redirect('/student/login')
                    ->withErrors(['matric_no' => 'Session expired. Please login again.']);
         }
-
-        $user = Auth::user();
 
         if (!$user->face_descriptor) {
             return redirect('/student/login')
