@@ -11,19 +11,6 @@ class FaceVerificationController extends Controller
     /**
      * SHOW FACE PAGE
      */
-    <?php
-
-namespace App\Http\Controllers\Student;
-
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;  // ← this line was missing
-
-class FaceVerificationController extends Controller
-{
-    /**
-     * SHOW FACE PAGE
-     */
     public function index(Request $request)
     {
         if (!Auth::check()) {
