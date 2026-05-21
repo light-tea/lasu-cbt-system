@@ -43,10 +43,9 @@ class FaceVerificationController extends Controller
         //     'faceDescriptor' => $user->face_descriptor
         // ]);
         
-        // CORRECT
-        return view('verify-face', [
-        'faceDescriptor' => $user->face_descriptor
-        ]);
+        return view('student.verify-face', [
+    'faceDescriptor' => $user->face_descriptor
+]);
     }
 
     /**
