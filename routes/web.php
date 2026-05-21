@@ -167,3 +167,13 @@ Route::get('/fix-sessions', function() {
     ');
     return 'Sessions table created successfully';
 });
+
+Route::get('/check-auth', function() {
+    return response()->json([
+        'authenticated' => Auth::check(),
+        'user' => Auth::user(),
+        'session_id' => session()->getId(),
+        'session_driver' => config('session.driver'),
+        'session_all' => session()->all(),
+    ]);
+});
