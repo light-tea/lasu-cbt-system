@@ -23,6 +23,8 @@ class AppServiceProvider extends ServiceProvider
 {
     if ($this->app->environment('production')) {
         URL::forceScheme('https');
+                \Illuminate\Support\Facades\URL::forceRootUrl(config('app.url'));
+
     }
 }
 }
