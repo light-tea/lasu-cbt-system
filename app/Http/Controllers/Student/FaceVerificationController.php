@@ -56,4 +56,3 @@ class FaceVerificationController extends Controller
         ], 400);
     }
 }
-}
