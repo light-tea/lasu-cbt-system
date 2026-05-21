@@ -146,3 +146,8 @@ Route::get('/debug-session', function() {
         'tables'         => DB::select('SHOW TABLES'),
     ]);
 });
+
+Route::get('/run-migrations', function() {
+    Artisan::call('migrate', ['--force' => true]);
+    return Artisan::output();
+});
