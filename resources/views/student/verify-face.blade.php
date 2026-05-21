@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         |--------------------------------------------------------------------------
         */
         const storedDescriptor = JSON.parse(
-            '{!! auth()->user()->face_descriptor !!}'
+            '{!! $faceDescriptor !!}'
         );
 
         /*
