@@ -151,3 +151,19 @@ Route::get('/run-migrations', function() {
     Artisan::call('migrate', ['--force' => true]);
     return Artisan::output();
 });
+
+Route::get('/fix-sessions', function() {
+    DB::statement('
+        CREATE TABLE IF NOT EXISTS sessions (
+            id VARCHAR(255) NOT NULL PRIMARY KEY,
+            user_id BIGINT UNSIGNED NULL,
+            ip_address VARCHAR(45) NULL,
+            user_agent TEXT NULL,
+            payload LONGTEXT NOT NULL,
+            last_activity INT NOT NULL,
+            INDEX sessions_user_id_index (user_id),
+            INDEX sessions_last_activity_index (last_activity)
+        )
+    ');
+    return 'Sessions table created successfully';
+});
