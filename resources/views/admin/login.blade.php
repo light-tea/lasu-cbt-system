@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrator Portal — LASU CBT</title>
+    <title>Administrator Portal — LASUSTECH CBT</title>
 
     <style>
 
@@ -349,7 +349,7 @@
             </div>
 
             <h1 class="hero-title">
-                LASU CBT
+                LASUSTECH CBT
                 <span>Administration System</span>
             </h1>
 
@@ -427,7 +427,7 @@
                     L
                 </div>
 
-                <h1>LASU CBT</h1>
+                <h1>LASUSTECH CBT</h1>
 
                 <p>
                     Administrator Examination Portal
@@ -502,7 +502,7 @@
 
             <!-- FOOTER -->
             <div class="footer">
-                © {{ date('Y') }} LASU CBT Examination System
+                © {{ date('Y') }} LASUSTECH CBT Examination System
             </div>
 
         </div>

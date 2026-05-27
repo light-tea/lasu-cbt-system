@@ -2,7 +2,7 @@
 <html lang="en" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
-<title>LASU CBT Portal — Secure Examination System</title>
+<title>LASUSTECH CBT Portal — Secure Examination System</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -541,7 +541,7 @@ footer {
     <a href="/" style="display:flex;align-items:center;gap:12px;text-decoration:none">
         <div class="nav-logo-mark">L</div>
         <div>
-            <div class="nav-logo-text">LASU CBT Portal</div>
+            <div class="nav-logo-text">LASUSTECH CBT Portal</div>
             <div class="nav-logo-sub">Secure Examination System</div>
         </div>
     </a>
@@ -823,7 +823,7 @@ footer {
 
         <div class="footer-top">
             <div>
-                <div class="footer-brand-name">LASU CBT Portal</div>
+                <div class="footer-brand-name">LASUSTECH CBT Portal</div>
                 <div class="footer-brand-sub">Biometric-Based Examination System</div>
             </div>
             <div class="footer-links">
@@ -835,8 +835,8 @@ footer {
         </div>
 
         <div class="footer-bottom">
-            <div class="footer-copy">&copy; {{ date('Y') }} LASU CBT Portal. Final Year Project.</div>
-            <div class="footer-mono">LASU &mdash; SECURE CBT SYSTEM</div>
+            <div class="footer-copy">&copy; {{ date('Y') }} LASUSTECH CBT Portal. </div>
+            <div class="footer-mono">LASUSTECH &mdash; SECURE CBT SYSTEM</div>
         </div>
 
     </div>

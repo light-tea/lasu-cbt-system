@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>My Results — LASU CBT Portal</title>
+<title>My Results — LASUSTECH CBT Portal</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -37,7 +37,7 @@ body{
 
             <div>
                 <h1 class="font-extrabold text-blue-600 leading-tight">
-                    LASU CBT Portal
+                    LASUSTECH CBT Portal
                 </h1>
                 <p class="text-xs text-slate-500">
                     Student Examination Dashboard

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>LASU CBT Result Portal</title>
+    <title>LASUSTECH CBT Result Portal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -120,7 +120,7 @@ if ($percentage >= 70) {
         <div class="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 px-8 py-10 text-white relative overflow-hidden">
 
             <div class="absolute top-0 right-0 opacity-10 text-[180px] font-black leading-none">
-                LASU
+                LASUSTECH
             </div>
 
             <div class="relative z-10 grid lg:grid-cols-2 gap-10 items-center">

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Admin Dashboard — LASU CBT</title>
+<title>Admin Dashboard — LASUSTECH CBT</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -544,7 +544,7 @@ tbody td.primary { color: #e2e8f0; font-weight: 600; }
         <div class="flex items-center gap-3">
             <div class="brand-logo">L</div>
             <div>
-                <h1>LASU CBT</h1>
+                <h1>LASUSTECH CBT</h1>
                 <p>Administration Panel</p>
             </div>
         </div>
@@ -587,7 +587,7 @@ tbody td.primary { color: #e2e8f0; font-weight: 600; }
         <div class="nav-section-label mb-3">System</div>
 
         <nav class="space-y-1">
-            <a href="/admin/settings" class="nav-link">
+            <a href="/admin/#" class="nav-link">
                 <span>Settings</span>
             </a>
             <a href="/admin/logs" class="nav-link">
@@ -782,7 +782,7 @@ tbody td.primary { color: #e2e8f0; font-weight: 600; }
                     <a href="/admin/exams" class="quick-btn slate">
                         Manage All Exams
                     </a>
-                    <a href="/admin/settings" class="quick-btn slate">
+                    <a href="/admin/#" class="quick-btn slate">
                         System Settings
                     </a>
                 </div>

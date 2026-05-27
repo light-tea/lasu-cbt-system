@@ -323,8 +323,8 @@ tbody td { padding: 16px 24px; font-size: 13.5px; color: #94a3b8; vertical-align
         <div class="nav-section-label mb-3">System</div>
 
         <nav class="space-y-1">
-            <a href="/admin/settings" class="nav-link"><span>Settings</span></a>
-            <a href="/admin/logs"     class="nav-link"><span>Activity Logs</span></a>
+            <a href="/admin/#" class="nav-link"><span>Settings</span></a>
+            <a href="/admin/#"     class="nav-link"><span>Activity Logs</span></a>
         </nav>
 
     </div>

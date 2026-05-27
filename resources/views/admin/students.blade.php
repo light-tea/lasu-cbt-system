@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Students — LASU CBT Admin</title>
+<title>Students — LASUSTECH CBT Admin</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -296,7 +296,7 @@ tbody td { padding: 16px 24px; font-size: 13.5px; color: #94a3b8; vertical-align
         <div class="flex items-center gap-3">
             <div class="brand-logo">L</div>
             <div>
-                <h1>LASU CBT</h1>
+                <h1>LASUSTECH CBT</h1>
                 <p>Administration Panel</p>
             </div>
         </div>
@@ -338,8 +338,8 @@ tbody td { padding: 16px 24px; font-size: 13.5px; color: #94a3b8; vertical-align
         <div class="nav-section-label mb-3">System</div>
 
         <nav class="space-y-1">
-            <a href="/admin/settings" class="nav-link"><span>Settings</span></a>
-            <a href="/admin/logs"     class="nav-link"><span>Activity Logs</span></a>
+            <a href="/admin/#" class="nav-link"><span>Settings</span></a>
+            <a href="/admin/#"     class="nav-link"><span>Activity Logs</span></a>
         </nav>
 
     </div>
@@ -569,7 +569,7 @@ tbody td { padding: 16px 24px; font-size: 13.5px; color: #94a3b8; vertical-align
             @if(count($students) > 0)
             <div class="pagination">
                 <span>{{ count($students) }} student{{ count($students) !== 1 ? 's' : '' }} registered</span>
-                <span style="color:#334155;font-family:'DM Mono',monospace;font-size:11px">LASU CBT &mdash; Confidential</span>
+                <span style="color:#334155;font-family:'DM Mono',monospace;font-size:11px">LASUSTECH CBT &mdash; Confidential</span>
             </div>
             @endif
 

@@ -38,7 +38,7 @@ body{
     </h1>
 
     <p class="text-slate-600 max-w-md">
-        Register once to access LASU-style CBT examinations with secure face verification.
+        Register once to access LASUSTECH CBT examinations with secure face verification.
     </p>
 
     <!-- LIVE PREVIEW BOX -->

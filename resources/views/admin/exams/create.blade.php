@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Create Exam — LASU CBT Admin</title>
+<title>Create Exam — LASUSTECH CBT Admin</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -319,7 +319,7 @@ main { margin-left: 268px; min-height: 100vh; position: relative; z-index: 1; }
         <div class="flex items-center gap-3">
             <div class="brand-logo">L</div>
             <div>
-                <h1>LASU CBT</h1>
+                <h1>LASUSTECH CBT</h1>
                 <p>Administration Panel</p>
             </div>
         </div>
@@ -360,8 +360,8 @@ main { margin-left: 268px; min-height: 100vh; position: relative; z-index: 1; }
         <div class="nav-section-label mb-3">System</div>
 
         <nav class="space-y-1">
-            <a href="/admin/settings" class="nav-link"><span>Settings</span></a>
-            <a href="/admin/logs"     class="nav-link"><span>Activity Logs</span></a>
+            <a href="/admin/#" class="nav-link"><span>Settings</span></a>
+            <a href="/admin/#"     class="nav-link"><span>Activity Logs</span></a>
         </nav>
 
     </div>

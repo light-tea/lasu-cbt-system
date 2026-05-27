@@ -45,7 +45,7 @@ body{
 
             <div>
                 <h1 class="font-extrabold syne text-lg text-slate-800">
-                    LASU CBT Portal
+                    LASUSTECH CBT Portal
                 </h1>
                 <p class="text-xs text-slate-500">
                     Secure Examination System
@@ -165,7 +165,7 @@ body{
         </div>
 
         <p class="text-center text-xs text-slate-400 mt-5">
-            LASU CBT Examination System
+            LASUSTECH CBT Examination System
         </p>
 
     </div>

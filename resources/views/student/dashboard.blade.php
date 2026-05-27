@@ -38,7 +38,7 @@ body{
 
             <div>
                 <h1 class="font-extrabold text-blue-600 leading-tight">
-                    LASU CBT Portal
+                    LASUSTECH CBT Portal
                 </h1>
                 <p class="text-xs text-slate-500">
                     Student Examination Dashboard
@@ -151,7 +151,7 @@ body{
             </p>
 
             <p class="text-xs text-slate-400 mt-1">
-                LASU CBT Standard Examination System
+                LASUSTECH CBT Standard Examination System
             </p>
 
            <!-- ACTION -->
@@ -222,7 +222,7 @@ body{
 <footer class="border-t bg-white/60 backdrop-blur-xl py-6">
     <div class="max-w-6xl mx-auto px-6 text-sm text-slate-500 flex justify-between">
 
-        <p>LASU CBT Portal © {{ date('Y') }}</p>
+        <p>LASUSTECH CBT Portal © {{ date('Y') }}</p>
 
         <p>Secure Academic Examination System</p>
 
